@@ -34,5 +34,20 @@ public class MyQueueUsingLinkedList {
             size++;
         }
     }
-
+    public Node dequeue() {
+        Node res = null;
+        if (front != null) {
+            if (front.getNext() != null) {
+                res = new Node(front.getData());
+                front = front.getNext();
+                size--;
+            } else {
+                res = new Node(front.getData());
+                front = null;
+                rear = null;
+                size--;
+            }
+        }
+        return res;
+    }
 }
