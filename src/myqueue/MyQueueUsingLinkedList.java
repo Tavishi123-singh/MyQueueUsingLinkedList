@@ -50,4 +50,15 @@ public class MyQueueUsingLinkedList {
         }
         return res;
     }
+    public Node peek() {
+        Node res = null;
+        if (!isEmpty()) {
+             res = new Node(front.getData());
+        }
+        return res;
+    }
+
+    public int getSize() {
+        return size;
+    }
 }
