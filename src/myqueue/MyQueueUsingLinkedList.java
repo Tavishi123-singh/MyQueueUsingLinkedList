@@ -22,4 +22,17 @@ public class MyQueueUsingLinkedList {
         }
         return res;
     }
+    public void enqueue(int element) {
+        Node node = new Node(element);
+        if (front == null) {
+            rear = node;
+            front = node;
+            size++;
+        } else {
+            rear.setNext(node);
+            rear = node;
+            size++;
+        }
+    }
+
 }
