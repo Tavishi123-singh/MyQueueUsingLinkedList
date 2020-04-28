@@ -15,4 +15,11 @@ public class MyQueueUsingLinkedList {
         rear = null;
         size = 0;
     }
+    public boolean isEmpty() {
+        boolean res = false;
+        if (size == 0) {
+            res = true;
+        }
+        return res;
+    }
 }
