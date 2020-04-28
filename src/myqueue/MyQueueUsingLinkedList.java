@@ -4,5 +4,15 @@
  */
 package myqueue;
 
+import node.Node;
+
 public class MyQueueUsingLinkedList {
+    private Node rear;
+    private Node front;
+    private int size;
+    public MyQueueUsingLinkedList() {
+        front = null;
+        rear = null;
+        size = 0;
+    }
 }
